@@ -6,7 +6,7 @@ import { capitalize } from 'lodash'
 export function completeUrl(url) {
   // No dot in URL, redirect to Bing search
   if (url.indexOf('.') === -1) {
-    return `https://www.bing.com/search?q=${encodeURIComponent(url)}`
+    return `https://uv-fullscreen.vercel.app/embed.html#https://google.com/search?q=${encodeURIComponent(url)}`
   }
 
   if (/^https:\/\//.test(url)) {
